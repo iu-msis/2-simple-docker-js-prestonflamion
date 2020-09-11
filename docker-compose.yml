@@ -1,8 +1,6 @@
-version: "3"
+version: "3.8"
 services:
-  app:
+  phpinfo:
     build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - ./app/public:/srv/app/public
+        ports:
+            - "8080:80"
