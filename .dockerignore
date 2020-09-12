@@ -1,0 +1,7 @@
+.*
+docker-compose.yml
+*.md
+
+```bash
+docker exec -it c0ee14f0c047 bash
+```
