@@ -37,22 +37,37 @@
       <div class="row">
         <div id="userProfile" class="col cardPane cardPaneLeft">
 
-          <h3 :title="message">List of all patients</h3>
+          <h3 :title="message">Our Patients</h3>
           <div class="patientCard">
-            <span class="lastName">{{ userName }}</span>,
-            <span class="firstName">{{ userEmail }}</span>
+            <a v-bind:href="userImgLarge">
+              <img v-bind:src="userImgLarge">
+            </a>
+
+            <h1> {{userName}} </h1>
+            <h2> {{userCountry}} </h2>
+            <h3>Born: {{userBirthday}} </h3>
+            <h2>Age: {{userAge}} </h2>
+            <p> Email; <a v-bind:href=" 'mailto:' + userEmail"> {{userEmail}}</a></p>
+
             <span class="birthDate float-right">{{ dob }}</span>
           </div>
 
           <button v-on:click="yell()">Click Me!</button>
         </div>
 
-        <div class="col-6">
-          <div id='userProfile'>
-            <h4>Name - {{name.first}}</h4>
-            <h4>Email - {{userData.name.last}}</h4>
+
+
+
+        <div>
+
           </div>
           <h1>New Visit</h1>
+
+
+
+
+
+
 
           <form>
             <div class="form-group">
