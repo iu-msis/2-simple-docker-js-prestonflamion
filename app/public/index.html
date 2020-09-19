@@ -35,13 +35,13 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div id="cardPaneLeft" class="col cardPane cardPaneLeft">
+        <div id="userProfile" class="col cardPane cardPaneLeft">
 
           <h3 :title="message">List of all patients</h3>
-          <div class="patientCard" v-for="pt in ptList">
-            <span class="lastName">{{ pt.lastName }}</span>,
-            <span class="firstName">{{ pt.firstName }}</span>
-            <span class="birthDate float-right">{{ pt.dob }}</span>
+          <div class="patientCard">
+            <span class="lastName">{{ lastName }}</span>,
+            <span class="firstName">{{ firstName }}</span>
+            <span class="birthDate float-right">{{ dob }}</span>
           </div>
 
           <button v-on:click="yell()">Click Me!</button>
@@ -108,6 +108,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/index.app.js"></script>
+    <script src="JS/index.app.js"></script>
   </body>
 </html>
