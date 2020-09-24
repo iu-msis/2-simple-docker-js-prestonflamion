@@ -37,7 +37,7 @@
       <div class="row">
         <div id="userProfile" class="col cardPane cardPaneLeft">
 
-          <h3 :title="message">Our Patients</h3>
+          <h3>Our Patients</h3>
           <div class="patientCard">
             <a v-bind:href="userImgLarge">
               <img v-bind:src="userImgLarge">
@@ -49,7 +49,7 @@
             <h2>Age: {{userAge}} </h2>
             <p> Email: <a v-bind:href=" 'mailto:' + userEmail"> {{userEmail}}</a></p>
 
-            <span class="birthDate float-right">{{ dob }}</span>
+            <span class="birthDate float-right">{{ userBirthday }}</span>
           </div>
 
             <form v-on:submit.prevent="fetchUser">
