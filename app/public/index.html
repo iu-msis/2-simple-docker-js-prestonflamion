@@ -52,6 +52,9 @@
             <span class="birthDate float-right">{{ dob }}</span>
           </div>
 
+            <form v-on:submit.prevent="fetchUser">
+              <button>Get New User</button>
+            </form>
           <button v-on:click="yell('Hello, world!')">Click Me!</button>
         </div>
 
