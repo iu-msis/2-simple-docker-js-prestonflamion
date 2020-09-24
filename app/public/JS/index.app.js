@@ -32,7 +32,7 @@
         this.userEmail = userData.email;
         this.userImgLarge = userData.picture.large;
         this.userImgThumb = userData.picture.thumbnail;
-        this.usarAge = userData.dob.age;
+        this.userAge = userData.dob.age;
         this.userCountry = userData.location.country;
         this.userBirthday = userData.dob.date[5] + userData.dob.date[6] + userData.dob.date[4] + userData.dob.date[8] +userData.dob.date[9];
 
