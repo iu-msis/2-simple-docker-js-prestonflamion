@@ -8,13 +8,20 @@
       userImgThumb:'',
       userAge: '',
       userCountry: '',
-      userBirthday:''
+      userBirthday:'',
+      times: 0
       },
+
       created() {
         this.fetchUser();
 },
 
   methods: {
+    yell: function() {
+      this.times = this.times + 1
+      var msg = "Clicked "  + this.times + " times.";
+      alert(msg);
+    },
     fetchUser: function() {
       fetch('https:/randomuser.me/api/')
       .then(response => response.json())
@@ -31,5 +38,6 @@
 
       });
     }
-  }
+  },
+
 })
