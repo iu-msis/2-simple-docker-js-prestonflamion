@@ -37,6 +37,18 @@
       <div class="row">
         <div id="userProfile" class="col cardPane cardPaneLeft">
 
+          <h2>Comments</h2>
+          <div class="patientCard" v-for="pt in ptList" v-on:click="activePt = pt">
+    <span class="lastName">{{ pt.lastName }}</span>,
+    <span clas="firstName">{{ pt.firstName }}</span>
+    <span class="birthDate float-right">{{ pt.dob }}</span>
+  </div>
+
+  <!-- <button v-on:click="yell()">Click Me!</button> -->
+</div>
+
+
+
           <h3>Our Patients</h3>
           <div class="patientCard">
             <a v-bind:href="userImgLarge">

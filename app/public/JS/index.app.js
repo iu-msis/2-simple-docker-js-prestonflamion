@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 
   var app = new Vue({
       el: '#userProfile',
@@ -18,7 +20,7 @@
 
   methods: {
     yell: function() {
-      this.times = this.times + 1
+      this.times = this.times + 1;
       var msg = "Clicked "  + this.times + " times.";
       alert(msg);
     },
@@ -40,4 +42,4 @@
     }
   },
 
-})
+});
